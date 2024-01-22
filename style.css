@@ -1,0 +1,302 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+nav {
+    height: 56px;
+    max-width: 100%;
+    /* margin: 0px 20px; */
+    padding: 0px 20px;
+    /* background: #212121; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo-area {
+    display: flex;
+    gap: 20px;
+    /* border: 2px solid red; */
+}
+
+#logo-area img {
+    padding: 8px;
+}
+
+#logo-area svg {
+    margin: auto;
+}
+
+#search-area {
+    display: flex;
+    gap: 5px;
+    width: 470px;
+    /* border: 2px solid red; */
+}
+
+#search-bar {
+    display: flex;
+    align-items: center;
+    /* padding-left: 10px; */
+    /* background: #303030; */
+    height: 40px;
+    /* width:360px; */
+    border-radius: 20px;
+    border: 1px solid #303030;
+}
+
+#search-bar input {
+    height: 38px;
+    width: 540px;
+    /* margin:0px 2px; */
+    padding-left: 6px;
+    border-radius: 2px 0px 0px 2px;
+    /* background: #121212; */
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+    color: black;
+}
+
+#search-bar span {
+    padding: 8px 20px;
+    margin: auto;
+    border-radius: 0px 20px 20px 0px;
+    background: #ecebeb;
+    /* border:2px solid red; */
+}
+#search-bar span:hover{
+    background: #f0f0f0;
+}
+
+#search-area>span {
+    padding: 10px 10px;
+    border-radius: 50%;
+    background: #f0f0f0;
+    /* border: 2px solid red; */
+    /* width:40px; */
+}
+
+#profile-area {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+#profile-area svg {
+    padding: 8px;
+}
+
+#profile-area img {
+    padding: 4px 14px;
+    border-radius: 50%;
+}
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    height:100%;
+}
+
+#menu {
+    flex: 25%;
+    color:black;
+    /* background: #212121; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height:90.7vh;
+    overflow-y: scroll;
+    /* border-radius: 40px; */
+    /* border: 2px solid red; */
+}
+#menu::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+#menu::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+
+/* Handle */
+#menu::-webkit-scrollbar-thumb {
+  background: #949292;
+  border-radius: 10px;
+}
+/* ::-webkit-scrollbar{
+    visibility: hidden;
+} */
+#video-area {
+    flex: 75%;
+}
+.channel-logo{
+    height:40px;
+    width:40px;
+}
+#first-menu {
+    padding: 12px 0px;
+}
+
+/* #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+.menu-options {
+    border-radius: 15px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 24px;
+    padding: 8px 10px 8px 10px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px 20px;
+    /* border: 2px solid green; */
+    /* width: 100%; */
+    /* background: #212121; */
+}
+
+/* #first-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+} */
+
+/* .menu-options>img {
+    border: 2px solid red;
+}
+
+.menu-options>p {
+    border: 2px solid red;
+} */
+.menu-options:hover {
+    background: #E1E0E0;
+    cursor:pointer;
+}
+
+#header {
+    display: flex;
+    /* background: #212121; */
+    /* border-top: 1px solid #303030; */
+}
+
+#header>div {
+    padding: 12px;
+}
+
+#header>div>p {
+    border-radius: 13px;
+    border: 0.3px solid #AAA;
+    background: #F2F2F2;
+    padding: 8px 12px;
+    color: black;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    overflow-x: hidden;
+}
+
+#header>div>p:hover {
+    background: #212121;
+    color:white;
+}
+
+#video-area {
+    display: flex;
+    flex-direction: column;
+}
+
+#videos {
+    /* border:2px solid red; */
+    display: flex;
+    width:1080px;
+    height: 70.5vh;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+    /* background:bla; */
+}
+#videos::-webkit-scrollbar{
+    visibility: hidden;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 340px;
+    height: 270px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    /* background: black; */
+}
+.card:hover{
+    /* background: #121212; */
+    cursor: pointer;
+}
+.card>img{
+    /* border:2px solid red; */
+    border-radius: 20px;
+    width:350px;
+    height:170px;
+    object-fit: cover;
+}
+.card>div {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-bottom: 18px;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.channel-logo {
+    border-radius: 50%;
+}
+
+.title {
+    max-height:40px;
+    color: black;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.views,.channel-name,
+.publish-time {
+    color: #898989;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.channel-name{
+    margin-top: 5px;
+}
+.card>div>div>div{
+    margin-top: 2px;
+    display: flex;
+    /* flex-direction: column; */
+    gap:10px;
+}
