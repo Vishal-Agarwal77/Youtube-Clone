@@ -126,16 +126,16 @@ search.addEventListener("click", () => {
 })
 const current_Url = new URLSearchParams(window.location.search);
 const query = current_Url.get("search_query");
-if(query!=" "){
+if(query){
     let q=query.replace("%"," ");
     videos.innerHTML = ``;
-    fetchvideo(q, 5).then((items) => {
+    fetchvideo(q, 20).then((items) => {
         console.log(items);
         displaycards(items);
     })
 }
 else{
-    fetchvideo("", 5).then((items) => {
+    fetchvideo("", 20).then((items) => {
         displaycards(items);
     })
 }

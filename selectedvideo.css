@@ -145,6 +145,10 @@ nav {
     align-items: center;
     gap: 15px;
     height: 100%;
+    /* border: 1px solid red; */
+}
+.main-info:hover{
+    cursor: pointer;
 }
 
 .main-info>img {

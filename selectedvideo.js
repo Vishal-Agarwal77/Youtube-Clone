@@ -308,26 +308,26 @@ function navToChannel(){
         window.location.href=`./channel.html`;
     })
 }
-async function subscribeinfo(channelid){
-    try {
-        const response = await fetch(`https://youtube.googleapis.com/youtube/v3/channelSections?part=snippet%2CcontentDetails&channelId=${channelid}&key=${api_key}`);
-        const data = await response.json();
-        playlistinfo(channelid,data.items);
-    } catch (error) {
-        console.log(error);
-    }
-}
-async function playlistinfo(channelid,data){
-    console.log(data);
-    for(let el of data){
-        try {
-            const response = await fetch(`https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=${channelid}&maxResults=25&key=${api_key}`);
-            const data = await response.json();
-            console.log(data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
-}
 navToChannel();
-subscribeinfo(selectedVideoInfo.channelID);
+// async function subscribeinfo(channelid){
+//     try {
+//         const response = await fetch(`https://youtube.googleapis.com/youtube/v3/channelSections?part=snippet%2CcontentDetails&channelId=${channelid}&key=${api_key}`);
+//         const data = await response.json();
+//         playlistinfo(channelid,data.items);
+//     } catch (error) {
+//         console.log(error);
+//     }
+// }
+// async function playlistinfo(channelid,data){
+//     // console.log(data);
+//     for(let el of data){
+//         try {
+//             const response = await fetch(`https://youtube.googleapis.com/youtube/v3/playlists?part=snippet%2CcontentDetails&channelId=${channelid}&maxResults=25&key=${api_key}`);
+//             const data = await response.json();
+//             // console.log(data);
+//         } catch (error) {
+//             console.log(error);
+//         }
+//     }
+// }
+// subscribeinfo(selectedVideoInfo.channelID);
